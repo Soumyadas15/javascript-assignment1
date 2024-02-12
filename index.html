@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        /* CSS styles for body */
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #main {
+            text-align: center;
+            width: 300px;
+        }
+        #calculatorForm {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+        }
+        select {
+            width: 10%;
+        }
+        button {
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main container -->
+
+
+    <div id="main">
+        <h1>Basic calclator</h1>
+
+
+        <!-- Calculator form starts -->
+
+
+        <form id="calculatorForm">
+
+            <input type="number" id="input1" placeholder="Number 1" required>     <!-- Input 1 -->
+            
+            <select id="operator" required>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+    
+            <input type="number" id="input2" placeholder="Number 2" required>     <!-- Input 2 -->
+    
+            <button type="button" onclick="calculate()">Calculate</button>        <!-- Calculate button -->
+        </form>
+
+
+        <!-- Calculator form ends -->
+        
+        <h1 id="result"></h1>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
